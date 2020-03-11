@@ -3,9 +3,12 @@
 
 <head>
   <meta charset="utf-8">
+  <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
   <title>Unplugged-Retreat from the desk, return refreshed</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -55,11 +58,16 @@
         <div class="content-wrapper">
           <div class="form-description">
             <h3>Want to join the next retreat?</h3>    
-           <p>Find out when we are holding our next retreat and how your company or team can sign up!</p>
+           <p>
+             Find out when we are holding our next retreat and how your company or team can sign up!
+            </p>
           </div> <!-- form description ends -->
             <div class="form"> <!--Here put the email address box and button--> 
               <h3>Find out more</h3>
-              <input type="text" name="name" value="name@email.com"><br>
+              
+              <input type="text" name="name" value="name@email.com">
+              <!-- Check if the break tag is really necessary -->
+              <!-- <br>  -->
              <input type="button" value="Download Itinerary"> 
            </div>     
         </div> <!-- aside content wrapper ends -->
@@ -67,12 +75,9 @@
 
       <section class="features">
         <div class="content-wrapper">
-        
           <h2>Have the work week you always dreamed of - without the bad wifi</h2>
-        
           <div class="features-items">
-          
-            <article class="features-items">
+            <article>
               <p class="fontawesome-icon">
               </p>
               <p class="features-item-description">
@@ -80,7 +85,7 @@
               </p>
             </article>
           
-            <article class="features-items">
+            <article >
               <p class="fontawesome-icon">
               </p>
               <p class="features-item-description">
@@ -88,7 +93,7 @@
               </p>
             </article>
         
-            <article class="features-items">
+            <article>
               <p class="fontawesome-icon">
               </p>
               <p class="features-item-description">
@@ -96,7 +101,7 @@
               </p>
             </article>
         
-            <article class="features-items">
+            <article>
               <p class="fontawesome-icon">
               </p>
               <p class="features-item-description">
@@ -104,7 +109,7 @@
               </p>
             </article>
         
-            <article class="features-items">
+            <article>
               <p class="fontawesome-icon">
               </p>
               <p class="features-item-description">
@@ -112,7 +117,7 @@
               </p>
             </article>
 
-            <article class="features-items">
+            <article>
               <p class="fontawesome-icon">
               </p>
               <p class="features-item-description">
@@ -131,14 +136,16 @@
             <img src="" alt="Team photo">
             <div>
               <h3>LaCrue Bottling Co. October 2017</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, 
                sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+              sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            </p>
            </div>
           </article>
-          </div>
+        </div>
       </sections>
 
     </main><!-- main wrapper -->
@@ -149,7 +156,8 @@
         <div class="footer-content">
           <address class="contact">
             <h4>Contact</h4>
-            <p>555-555-5555<br>
+            <p>
+              555-555-5555<br>
               hello@unplugged.com
             </p>
           </address>
@@ -158,13 +166,13 @@
             <h4>Social</h4>
             <div class="social-icons">
               <p>
-              <a href="https://www.facebook.com/Skillcrush/" target="_blank"><img src="" alt="facebook logo"></a>
+                <a href="https://www.facebook.com/Skillcrush/" target="_blank"><img src="" alt="facebook logo"></a>
               </p>
               <p>
-              <a href="https://twitter.com/Skillcrush" target="_blank"><img src="" alt="twitter logo"></a>
+                <a href="https://twitter.com/Skillcrush" target="_blank"><img src="" alt="twitter logo"></a>
               </p>
               <p>
-              <a href="https://www.instagram.com/skillcrush/" target="_blank"><img src="" alt="istagram logo"></a>
+                <a href="https://www.instagram.com/skillcrush/" target="_blank"><img src="" alt="istagram logo"></a>
               </p>
             </div>
           </div> <!--End social-->
@@ -186,8 +194,15 @@
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    window.ga = function () {
+       ga.q.push(arguments) 
+       }; 
+    ga.q = []; 
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); 
+    ga('set','transport','beacon'); 
+    ga('send', 'pageview')
+    
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
