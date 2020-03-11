@@ -100,59 +100,131 @@ textarea {
 
 /*-----------------Base Header Styles-------------*/
 
-header, footer {}
+header, footer {
+  display: flex;
+  flex-flow: row wrap; /*flex direction + flex-wrap*/
+  justify-content: center;
+  align-items: center;
+  
+}
 
 
 
 /*------Header Styles--------*/
-header {
-
+header{
 }
 
 .header-divider{
-
+  border-bottom: solid black;
 }
 
 header .content-wrapper {
-
+  width: 100%;
 }
 
 header nav {
+  display: flex;
+}
 
+header nav ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*-----------------------------Main Styles------------------------*/
 
-.hero-area{}
+main {
+  
+}
+section{
+  
+}
+.hero-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-main .content-wrapper{}
 
-main .form-description{}
+main .content-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 0 10px;
+}
 
-main .form{}
+.form-description{
+  display: flex;
+  flex-flow: row wrap;
+}
 
-main .features{}
+.form{
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+}
 
-main .features-items{}
+.features{
+  display: flex;
+}
 
-main .fontawesome-icon{}
+.features-items{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
 
-main .features-item-description{}
+.fontawesome-icon{}
 
-main .reviews{}
+.features-item-description{}
+
+.reviews{
+  display: flex;
+}
 
 
 /*-----------------Base footer Styles-------------*/
 
-.footer-content{}
+.footer-content{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
 
-.contact{}
+.contact{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-.social{}
+.contact p, .contact h4 {
+  width: 60%;
+  text-align: center;
+}
 
-.social-icons{}
+.social{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 
-.copyright{}
+.social-icons{
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /**/
+  align-items: center;
+}
+
+.copyright{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 
 /*--------Mobile Styles - Homepage----------*/
