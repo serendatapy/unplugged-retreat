@@ -110,6 +110,10 @@ footer {
 
 /*------Header Styles--------*/
 
+.header {
+
+}
+
 .header-divider {
   width: 100%;
   border-bottom: solid black;
@@ -129,14 +133,16 @@ header .logo{
 }
 
 header nav {
-  width: 60%;
-  display: flex;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  /*display: flex;*/
 }
 
 header nav ul {
-  width: 100%;
+  /*width: 100%;*/
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding: 0em 3em;
 }
 
 /*-----------------------------Main Styles------------------------*/
@@ -145,26 +151,36 @@ main {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  font-family: 'Poppins', sans-serif;
 }
 aside {
-  width: 90%;
+  width: 100%;
 }
 main .hero-area {
   display: flex;
-  /* justify-content: start; */
-  /* align-items: center; */
-  width: 90%;
+  width: 100%;
+}
+.hero-area h1 {
+  font-size: 2.25em;
+  line-height: 1;
 }
 
 main .content-wrapper {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 0em 1.5em;
 }
 
 .form-description {
   display: flex;
   flex-flow: row wrap;
+}
+.form-description h3 {
+  margin-bottom: 0em;
+}
+.form-description p {
+  font-size: 0.85em;
 }
 
 .form {
@@ -173,15 +189,33 @@ main .content-wrapper {
   flex-flow: column wrap;
 }
 
+.form h3 {
+  margin-bottom: 0.1em;
+}
+
+.form input {
+  margin: 0.5em 0em;
+}
+
 .features {
   /* display: flex; */
   /* justify-content: center; */
   /* flex-flow: row wrap; */
-  width: 90%;
+  width: 100%;
+}
+
+.features h2{
+  font-size: 2em;
+}
+
+.features .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 0em 1.5em;
 }
 
 .features-items {
-  width: 70%;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -191,19 +225,35 @@ main .content-wrapper {
 }
 
 .features-item-description {
+  padding: 0em 2.5em;
+  text-align: center;
 }
 
 .reviews {
   /* display: flex; */
   /* justify-content: center; */
   /* flex-flow: row wrap; */
-  width: 90%;
+  width: 100%;
+}
+
+.reviews h2 {
+  font-size: 2em;
+}
+
+.reviews h3 {
+  padding-right: 4em;
+}
+
+.reviews p {
+  font-size: 0.9em;
+  text-align: left;
 }
 
 .reviews-content-wrapper {
   display: flex;
   /* justify-content: start; */
   flex-flow: row wrap;
+  padding: 0em 1.5em;
 }
 /*-----------------About Styles-------------*/
 
@@ -249,10 +299,17 @@ main .content-wrapper {
 
 /*-----------------Base footer Styles-------------*/
 
-.footer-content {
+footer .content-wrapper{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 0em 1.5em;
+}
+
+.footer-content {
+  /*display: flex;
+  justify-content: center;
+  flex-flow: row wrap;*/
 }
 
 .contact {
@@ -265,12 +322,13 @@ main .content-wrapper {
 
 .contact p,
 .contact h4 {
-  width: 60%;
+  /*width: 60%;*/
   text-align: center;
+  padding: 0em 3em;
 }
 
 .social {
-  width: 100%;
+  /*width: 100%;*/
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -380,15 +438,14 @@ main .content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media only screen and (min-width: 768px){
+/*Tablet styles here*/
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+
+}
+@media only screen and (min-width: 1200px){
+/*Desktop styles here*/
+
 }
 
 /* ==========================================================================
