@@ -97,7 +97,33 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0em 1.5em;
+}
 
+address {
+  font-style: normal;
+}
+body h1, h2, h3, h4 {
+  font-weight: 500;
+  margin-bottom: 0.25em;
+}
+
+body h1 {
+  font-size: 2.25em;
+}
+body h2 {
+  font-size: 2em;
+}
+body p {
+  font-size: 0.9em;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
 /*-----------------Base Header Styles-------------*/
 
 header,
@@ -120,9 +146,7 @@ footer {
 }
 
 header .content-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+  padding: 0em;
   width: 100%;
 }
 
@@ -135,11 +159,9 @@ header .logo{
 header nav {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
-  /*display: flex;*/
 }
 
 header nav ul {
-  /*width: 100%;*/
   display: flex;
   justify-content: space-evenly;
   padding: 0em 3em;
@@ -151,7 +173,6 @@ main {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  font-family: 'Poppins', sans-serif;
 }
 aside {
   width: 100%;
@@ -160,16 +181,11 @@ main .hero-area {
   display: flex;
   width: 100%;
 }
-.hero-area h1 {
-  font-size: 2.25em;
+/*.hero-area h1 {
   line-height: 1;
-}
+}*/
 
 main .content-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  padding: 0em 1.5em;
 }
 
 .form-description {
@@ -180,7 +196,7 @@ main .content-wrapper {
   margin-bottom: 0em;
 }
 .form-description p {
-  font-size: 0.85em;
+  font-size: 0.9em;
 }
 
 .form {
@@ -201,18 +217,10 @@ main .content-wrapper {
   /* display: flex; */
   /* justify-content: center; */
   /* flex-flow: row wrap; */
-  width: 100%;
-}
-
-.features h2{
-  font-size: 2em;
+  /*width: 100%;*/
 }
 
 .features .content-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  padding: 0em 1.5em;
 }
 
 .features-items {
@@ -230,14 +238,6 @@ main .content-wrapper {
 }
 
 .reviews {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-flow: row wrap; */
-  width: 100%;
-}
-
-.reviews h2 {
-  font-size: 2em;
 }
 
 .reviews h3 {
@@ -249,86 +249,57 @@ main .content-wrapper {
   text-align: left;
 }
 
-.reviews-content-wrapper {
-  display: flex;
-  /* justify-content: start; */
-  flex-flow: row wrap;
-  padding: 0em 1.5em;
+.reviews .content-wrapper {
 }
 /*-----------------About Styles-------------*/
 
 
 .mission{
-  /* display: flex; */
-  /* justify-content: start; */
-  /* flex-flow: row wrap; */
-  width: 90%;
-
 }
 .contact-section {
-  /* display: flex; */
-  /* justify-content: start; */
-  /* flex-flow: row wrap; */
-  width: 90%;
 }
 
 .contact-content {
   display: flex;
-  /* justify-content: start; */
   flex-flow: row wrap;
+  font-style: normal;
 }
 
 /*-----------------FAQ-----------------*/
 .faq {
-  /* width: 100%; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-flow: row wrap; */
 }
-.faq-content-wrapper {
-  display: flex;
-  /* justify-content: center; */
-  flex-flow: row wrap;
-  width: 90%;
+.faq .content-wrapper {
 }
 
 .faq-content {
-  /* width: 100%; */
-
 }
 
 /*-----------------Base footer Styles-------------*/
 
 footer .content-wrapper{
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  padding: 0em 1.5em;
 }
 
 .footer-content {
-  /*display: flex;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  flex-flow: row wrap;*/
 }
 
 .contact {
-  width: 100%;
+  /*width: 100%;*/
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column;
 }
 
 .contact p,
 .contact h4 {
-  /*width: 60%;*/
   text-align: center;
   padding: 0em 3em;
 }
 
 .social {
-  /*width: 100%;*/
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -337,8 +308,8 @@ footer .content-wrapper{
 .social-icons {
   width: 100%;
   display: flex;
-  justify-content: space-around; /**/
-  align-items: center;
+  justify-content: space-around;
+  /*align-items: center;*/
 }
 
 .copyright {
