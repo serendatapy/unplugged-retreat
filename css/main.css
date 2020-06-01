@@ -98,7 +98,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*-----------------General Base Styles-------------*/
+/*-----------------Global Base Styles-------------*/
 html {
   font-size: 16px ;
   line-height: 1.2;
@@ -106,7 +106,7 @@ html {
 .content-wrapper {
   display: flex;
   flex-flow: row wrap;
-  padding: 0% 10%;
+  padding: 0% 6%;
   background: #527158;
 }
 
@@ -127,6 +127,7 @@ h2 {
 }
 p {
   font-size: 0.8em;
+  margin-bottom: 30px;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -137,6 +138,14 @@ body {
 a {
   color: #e2e3ed;
   text-decoration: none;
+}
+
+img {
+  width: 100%;
+
+}
+figure {
+  margin: 0;
 }
 /*-----------------Base Header Styles-------------*/
 
@@ -150,7 +159,12 @@ footer {
 
 /*------Header Styles--------*/
 
-.header {
+header figure{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -170,6 +184,13 @@ header .logo{
   justify-content: center;
   flex: 60%;
 }
+
+header .logo img{
+  padding: 1em;
+  /*background: url('../img/Logo.png') center no-repeat;
+  background-size: cover;*/
+}
+
 
 header nav {
   flex: 100%;
@@ -195,17 +216,23 @@ main {
 }
 
 main .hero-area {
-  display: flex;
+  /*display: flex;*/
   width: 100%;
 }
+.hero-area h1 {
+  margin: 0;
+  padding-top: 1.5em;
+  padding-bottom: 9em;
+}
 .hero-area .content-wrapper {
-  background-image: url();
+  background: url('../img/jake-melara-30679-unsplash72DPI.jpg') center no-repeat;
+  background-size: cover;
 }
 
 main .content-wrapper {
 }
 
-aside .form {
+aside {
   width: 100%;
 }
 
@@ -235,6 +262,7 @@ input[type=text] {
 input[type=button] {
   width: 100%;
   padding: 20px 0;
+  margin-bottom: 50px;
   margin-top: 20px;
   background-color: #2a423a;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
@@ -244,13 +272,15 @@ input[type=button] {
   border: none;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .features {
+  background: url('../img/rawpixel-800820-unsplash172DPI.jpg') center no-repeat;
+  background-size: cover;
 }
 
 .features .content-wrapper {
+  background: none;
 }
 
 .features-items {
@@ -267,7 +297,8 @@ input[type=button] {
   text-align: center;
 }
 
-.reviews {
+.reviews h2{
+  margin: 50px 0 30px 0;
 }
 
 .reviews h3 {
@@ -281,6 +312,9 @@ input[type=button] {
 
 
 .mission{
+}
+.contact-section{
+  width: 100%;
 }
 .contact-section .content-wrapper{
   background: #2a423a;
@@ -505,8 +539,9 @@ aside .content-wrapper {
   display: flex;
   flex-flow: row;
   flex: 100%;
+  margin-bottom: 3em;
 }
-.reviews #team-photo{
+.reviews figure{
   flex: 1 300px;
 }
 .reviews #team-review {
