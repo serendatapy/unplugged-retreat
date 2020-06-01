@@ -198,6 +198,9 @@ main .hero-area {
   display: flex;
   width: 100%;
 }
+.hero-area .content-wrapper {
+  background-image: url();
+}
 
 main .content-wrapper {
 }
