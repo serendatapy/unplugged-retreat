@@ -97,33 +97,44 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/*-----------------General Base Styles-------------*/
+html {
+  font-size: 16px ;
+}
 .content-wrapper {
   display: flex;
   flex-flow: row wrap;
-  /*justify-content: center;*/
   padding: 0% 10%;
 }
 
 address {
   font-style: normal;
 }
-body h1, h2, h3, h4 {
+h1, h2, h3, h4 {
   font-weight: 500;
-  margin-bottom: 0.25em;
+  margin-bottom: 0em;
+  font-family: 'Poppins', sans-serif;
 }
 
-body h1 {
+h1 {
   font-size: 2.25em;
 }
-body h2 {
+h2 {
   font-size: 2em;
-  text-align: left;
 }
-body p {
-  font-size: 0.9em;
+p {
+  font-size: 0.8em;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
 }
 /*-----------------Base Header Styles-------------*/
 
@@ -142,24 +153,24 @@ footer {
 }
 
 .header-divider {
-  width: 100%;
+  flex: 100%;
   border-bottom: solid black;
 }
 
 header .content-wrapper {
   justify-content: center;
   padding: 0em;
-  width: 100%;
+  flex: 100%;
 }
 
 header .logo{
   display: flex;
   justify-content: center;
-  width: 60%;
+  flex: 60%;
 }
 
 header nav {
-  width: 100%;
+  flex: 100%;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -171,7 +182,6 @@ header nav ul {
 }
 header nav a {
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 /*-----------------------------Main Styles------------------------*/
@@ -188,9 +198,6 @@ main .hero-area {
   display: flex;
   width: 100%;
 }
-/*.hero-area h1 {
-  line-height: 1;
-}*/
 
 main .content-wrapper {
 }
@@ -199,22 +206,12 @@ main .content-wrapper {
   display: flex;
   flex-flow: column;
 }
-.form-description h3 {
-  margin-bottom: 0em;
-}
-.form-description p {
-  font-size: 0.9em;
-}
 
 .form {
   width: 0%; /*needed to unset defaults*/
   display: flex;
   flex-flow: column;
-  flex: 1 100%;
-}
-
-.form h3 {
-  margin-bottom: 0.1em;
+  flex: 100%;
 }
 
 .form input {
@@ -223,10 +220,6 @@ main .content-wrapper {
 }
 
 .features {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* flex-flow: row wrap; */
-  /*width: 100%;*/
 }
 
 .features .content-wrapper {
@@ -253,13 +246,8 @@ main .content-wrapper {
   padding-right: 4em;
 }
 
-.reviews p {
-  font-size: 0.8em;
-  text-align: left;
-}
-
 .reviews .content-wrapper {
-  justify-content: left;
+  /*justify-content: left;*/
 }
 /*-----------------About Styles-------------*/
 
@@ -273,7 +261,6 @@ main .content-wrapper {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  font-style: normal;
 }
 
 /*-----------------FAQ-----------------*/
@@ -284,9 +271,9 @@ main .content-wrapper {
   justify-content: flex-start;
   flex-flow: row wrap;
 }
-/*
+
 .faq-content {
-}*/
+}
 
 /*-----------------Base footer Styles-------------*/
 
@@ -428,7 +415,7 @@ footer .content-wrapper{
 @media only screen and (min-width: 768px){
 /*Tablet styles here*/
 
-/*-----------------Base Styles-------------*/
+/*-----------------General Styles-------------*/
 body {
   font-size: 115%;
 }
