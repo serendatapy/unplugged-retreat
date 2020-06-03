@@ -298,11 +298,19 @@ input[type=button] {
 }
 
 .features h2 {
-  margin-bottom: 60px;
+  margin: 0;
+}
+
+.fontawesome-icon {
+  text-align: center;
+  font-size: 3.75em;
+  margin: 60px 0 0 0;
 }
 
 .features .content-wrapper {
   background: none;
+  margin: 50px;
+  padding: 0;
 }
 
 .features-items {
@@ -312,13 +320,18 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.fontawesome-icon {
+.features-items article {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column;
 }
 
 .features-item-description {
   padding: 0em 2.5em;
   text-align: center;
 }
+
 /* Reviews */
 .reviews {
   background: #2a423a;
@@ -330,7 +343,7 @@ input[type=button] {
 
 .reviews h3 {
   padding-right: 4em;
-  margin: 0;
+  margin: 20px 0 0 0;
 }
 
 
@@ -434,9 +447,6 @@ footer {
 }
 
 footer .content-wrapper{
- /* width: 100%;*/
-  /*background: #202322;*/
-  width: 55%;
   margin: 50px 0;
 }
 
@@ -452,12 +462,17 @@ footer .content-wrapper{
   flex-flow: row wrap;
   justify-content: center;
 }
+.social h3 {
+  flex: 100%;
+}
 
 .social-icons {
-  /*width: 100%;*/
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 2.5em;
+  height: 50px;
+  flex: 100%;
 }
 
 .social-icons p {
@@ -467,11 +482,16 @@ footer .content-wrapper{
 }
 
 .copyright {
-  /*width: 100%;
-  display: flex;
-  justify-content: center;
-  background: #202322;*/
   margin: 20px 0;
+}
+
+.contact, .social {
+  flex: 50%;
+}
+
+.contact p {
+  height: 50px;
+  margin: 0;
 }
 
 /*--------Mobile Styles - Homepage----------*/
@@ -628,9 +648,15 @@ aside .content-wrapper {
   min-height: 600px;
   padding: 50px 0;
 }
+
+.fontawesome-icon{
+  margin-top: 30px;
+}
+
 .features-items article {
   flex: 40%;
 }
+
 .features-items-description {
   padding: 0em 1em;
 }
@@ -672,13 +698,38 @@ footer .content-wrapper {
   flex-flow: row wrap;
   font-size: 1.5em;
 }
-
+.footer-content h3 {
+  width: 100%;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.footer-content .contact{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.footer-content .social{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.social-icons {
+  font-size: 40px;
+}
+/*
 .contact, .social {
   flex: 50%;
+}*/
+.contact p {
+  font-size: 14px;
 }
-.social h3 {
-  width: 100%;
-}
+/*
+i{
+  height: 40px;
+  width: 40px;
+}*/
 
 /*-----------------FAQ Styles-------------*/
 
@@ -761,6 +812,9 @@ main .hero-area {
   width: 100%;
   min-height: 775px;
 }
+.features .content-wrapper {
+  margin: 100px;
+}
 
 .features-items article {
   flex: 33%;
@@ -774,9 +828,18 @@ main .hero-area {
 .reviews h2 {
   padding-right: 0em;
 }
+/*-----------------Footer Styles-------------*/
 footer {
   justify-content: center;
 }
+.social-icons {
+  font-size: 40px;
+}
+
+.footer-content h3{
+  font-size: 30px;
+}
+
 .copyright {
   width: 100%;
 }
