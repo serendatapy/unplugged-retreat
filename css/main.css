@@ -161,13 +161,15 @@ address {
   padding: 0% 6%;
 }
 
-
-/*-----------------Base Header Styles-------------*/
+/* ==========================================================================
+   Website Header and Footer
+   ========================================================================== */
+/*-----------------Base H/F Styles-------------*/
 
 header,
 footer {
   display: flex;
-  flex-flow: row wrap; /*flex direction + flex-wrap*/
+  flex-flow: row wrap; /*flex-direction + flex-wrap*/
   justify-content: center;
   align-items: center;
   background: #202322;
@@ -211,6 +213,79 @@ header nav ul {
   padding: 0em 3em;
 }
 
+
+/*-----------------------------Footer Styles------------------------*/
+
+footer {
+  flex-direction: column;
+  text-align: center;
+}
+
+footer .content-wrapper{
+  margin: 50px 0;
+}
+
+.footer-content {
+}
+
+.social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.social h3 {
+  flex: 100%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2.5em;
+  height: 50px;
+  flex: 100%;
+}
+
+.social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  border-radius: 30px;
+  background: #527158;
+}
+i {
+  color: #e2e3ed;
+}
+.fa-facebook-f,.fa-twitter,.fa-instagram {
+  height: 50px;
+  width: 50px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.copyright {
+  margin: 25px 0;
+}
+
+.contact, .social {
+  flex: 50%;
+}
+
+.contact p {
+  height: 50px;
+  margin: 0;
+}
+
+
+
+/* ==========================================================================
+   Home Page
+   ========================================================================== */
+
+
 /*-----------------------------Main Styles------------------------*/
 
 main {
@@ -234,7 +309,7 @@ main .hero-area {
   padding-top: 1.5em;
 }
 
-/* ASIDE */
+/*----------------------------- ASIDE-------------------------------------------- */
 
 aside {
   background-color: #527158;
@@ -285,7 +360,7 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-/* Features */
+/*---------------------- Features------------------------------ */
 
 .features {
   background: url('../img/rawpixel-800820-unsplash172DPI.jpg') center no-repeat;
@@ -332,7 +407,7 @@ input[type=button] {
   text-align: center;
 }
 
-/* Reviews */
+/* -----------------------Reviews--------------------------- */
 .reviews {
   background: #2a423a;
 }
@@ -440,59 +515,11 @@ input[type=button] {
 }
 
 
-/*-----------------Base footer Styles-------------*/
-footer {
-  flex-direction: column;
-  text-align: center;
-}
+/* ==========================================================================
+   Footer Page Styles
+   ========================================================================== */
 
-footer .content-wrapper{
-  margin: 50px 0;
-}
 
-.footer-content {
-  /*display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 100%;*/
-}
-
-.social {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.social h3 {
-  flex: 100%;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 2.5em;
-  height: 50px;
-  flex: 100%;
-}
-
-.social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.copyright {
-  margin: 20px 0;
-}
-
-.contact, .social {
-  flex: 50%;
-}
-
-.contact p {
-  height: 50px;
-  margin: 0;
-}
 
 /*--------Mobile Styles - Homepage----------*/
 
