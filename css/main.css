@@ -225,14 +225,12 @@ footer .content-wrapper{
   margin: 50px 0;
 }
 
-.footer-content {
-}
-
 .social {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
+
 .social h3 {
   flex: 100%;
 }
@@ -335,10 +333,6 @@ aside .content-wrapper{
   flex-flow: column;
 }
 
-
-.form input {
-}
-
 input[type=text] {
  box-sizing: border-box; /*allows correct sizing of boxes*/
  width: 100%;
@@ -346,6 +340,7 @@ input[type=text] {
  font-style: italic;
  padding: 1em;
 }
+
 input[type=button] {
   width: 100%;
   padding: 20px 0;
@@ -822,11 +817,7 @@ body {
   align-items: center;*/
   font-size: 170%;
 }
-main {
-  /*
-  max-width: 1200px;
-  */
-}
+
 /*-----------------Homepage Styles-------------*/
 main .hero-area {
   min-height: 775px;
