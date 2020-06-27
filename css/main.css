@@ -254,6 +254,10 @@ footer .content-wrapper{
   border-radius: 30px;
   background: #527158;
 }
+.social-icons p:hover {
+  background: rgb(42, 66, 58);
+}
+
 i {
   color: #e2e3ed;
 }
@@ -353,6 +357,10 @@ input[type=button] {
   border: none;
   text-align: center;
   text-transform: uppercase;
+}
+
+input[type=button]:hover {
+  background-color:#202322;
 }
 
 /*---------------------- Features------------------------------ */
