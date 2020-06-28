@@ -254,9 +254,6 @@ footer .content-wrapper{
   border-radius: 30px;
   background: #527158;
 }
-.social-icons p:hover {
-  background: rgb(42, 66, 58);
-}
 
 i {
   color: #e2e3ed;
@@ -357,10 +354,6 @@ input[type=button] {
   border: none;
   text-align: center;
   text-transform: uppercase;
-}
-
-input[type=button]:hover {
-  background-color:#202322;
 }
 
 /*---------------------- Features------------------------------ */
@@ -477,15 +470,8 @@ input[type=button]:hover {
 
 .about-contact {
   display: flex;
-  /*justify-content: center;
-  align-items: center;*/
   flex-flow: row wrap;
 }
-/*
-.about-address-1, .about-address-2 {
-  display: flex;
-  flex: 50%;
-}*/
 
 .about-content p {
   margin: 0;
@@ -516,12 +502,6 @@ input[type=button]:hover {
   margin-bottom: 30px;
   line-height: 1.333;
 }
-
-
-/* ==========================================================================
-   Footer Page Styles
-   ========================================================================== */
-
 
 
 /*--------Mobile Styles - Homepage----------*/
@@ -614,7 +594,17 @@ input[type=button]:hover {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media (hover: hover){
 
+  .social-icons p:hover {
+    background: rgb(42, 66, 58);
+  }
+
+  input[type=button]:hover {
+  background-color:#202322;
+}
+
+}
 @media only screen and (min-width: 768px){
 /*Tablet styles here*/
 
