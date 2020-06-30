@@ -66,15 +66,19 @@
           </p>
         </div>
         <!-- form description ends -->
-        <div class="form">
+        <form action = "index.html" method="" class="form">
           <!--Here put the email address box and button-->
           <h3>Find out more</h3>
 
-          <input type="text" name="name" value="name@email.com" />
+          <input id ="download-email" name="download-email"
+          type="text" placeholder="name@email.com" minlength="5"
+          pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"
+          title="enter an email in this format something@something.something"
+          required/>
           <!-- Check if the break tag is really necessary -->
           <!-- <br>  -->
-          <input type="button" value="Download Itinerary" />
-        </div>
+          <input type="submit" value="Download Itinerary" />
+        </form>
       </div>
       <!-- aside content wrapper ends -->
     </aside>

@@ -342,7 +342,7 @@ input[type=text] {
  padding: 1em;
 }
 
-input[type=button] {
+input[type=submit] {
   width: 100%;
   padding: 20px 0;
   margin-top: 20px;
@@ -600,7 +600,7 @@ input[type=button] {
     background: rgb(42, 66, 58);
   }
 
-  input[type=button]:hover {
+  input[type=submit]:hover {
   background-color:#202322;
 }
 
