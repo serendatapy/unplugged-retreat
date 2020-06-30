@@ -155,7 +155,7 @@ address {
   font-style: normal;
  }
 
- .content-wrapper {
+.content-wrapper {
   display: flex;
   flex-flow: row wrap;
   padding: 0% 6%;
@@ -738,18 +738,10 @@ footer .content-wrapper {
 .social-icons {
   font-size: 40px;
 }
-/*
-.contact, .social {
-  flex: 50%;
-}*/
+
 .contact p {
   font-size: 14px;
 }
-/*
-i{
-  height: 40px;
-  width: 40px;
-}*/
 
 /*-----------------FAQ Styles-------------*/
 
@@ -810,9 +802,6 @@ address .about-contact{
 @media only screen and (min-width: 1200px){
 /*Desktop styles here*/
 body {
-  /*display: flex;
-  flex-flow: column;
-  align-items: center;*/
   font-size: 170%;
 }
 
